@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard :: Boatel - Hoptel</title>
+    <title>Dashboard :: Boatel - Hotel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -154,16 +154,16 @@
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button"
                                 aria-expanded="false" aria-controls="sidebarApps">
-                                <i class="ri-apps-2-line"></i> <span data-key="t-apps">Hotel</span>
+                                <i class="ri-apps-2-line"></i> <span data-key="t-apps">Rental </span>
                             </a>
                             <div class="collapse menu-dropdown" id="sidebarApps">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link" data-key="t-calendar"> Hotel
+                                        <a href="index.html" class="nav-link" data-key="t-calendar"> Rental 
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index-location.html" class="nav-link" data-key="t-chat"> Location </a>
+                                        <a href="index-aminities.html" class="nav-link" data-key="t-chat"> Aminities </a>
                                     </li>
 
                                     <li class="nav-item">
@@ -171,13 +171,17 @@
                                             Booking </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index-proof.html" class="nav-link" data-key="t-mailbox">
-                                            Id Proof </a>
+                                        <a href="index-news_letter.html" class="nav-link" data-key="t-mailbox">
+                                            News Letter </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="index-uploadqrcode.html" class="nav-link" data-key="t-mailbox">
-                                            Qr Code </a>
+                                        <a href="index-user_reg.html" class="nav-link" data-key="t-mailbox">
+                                           Users</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-reg_owner.html" class="nav-link" data-key="t-mailbox">
+                                           Rental Owner</a>
                                     </li>
                             </div>
                         </li>
@@ -198,62 +202,175 @@
         <!-- Start right Content here -->
         <!-- ============================================================== -->
         <div class="main-content">
+
+            <!-- <div class="page-content">
+                <div class="container-fluid"> -->
+
+            <!-- start page title -->
             <div class="row">
                 <div class="page-content">
                     <div class="container-fluid">
+
                         <!-- start page title -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Qrcode</h4>
+                                    <h4 class="mb-sm-0">Users</h4>
+
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item active">Create Qrcode</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a>
+                                            </li>
+                                            <li class="breadcrumb-item active">Users</li>
                                         </ol>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                         <!-- end page title -->
                         <div class="row">
-                            <div class="col-lg-12">
+                            <!-- <div class="col-md-12 text-right" style="padding-bottom: 20px;">
+                                <a href="create-location.html" class="btn btn-primary">+ Add New Location</a>
+                            </div> -->
+                            <div class="col-xl-12">
                                 <div class="card">
-                                    <div class="card-header align-items-center d-flex">
-                                        <h4 class="card-title mb-0 flex-grow-1">Create Qrcode</h4>
-                                    </div><!-- end card header -->
+
+
                                     <div class="card-body">
-                                        <form id="hotelForm" enctype="multipart/form-data" action="">
-                                            <div class="col-md-12 row">
-                                                
-                                                <div class="col-md-6">
-                                                    <div>
-                                                        <label for="image" class="form-label">Image</label>
-                                                        <input type="file" class="form-control" id="image" name="image" accept="image/*">
-                                                    </div>
-                                                </div>
-                                             
-                                                <div class="col-md-6">
-                                                    <div>
-                                                        <button type="submit" class="btn btn-primary mt-5">Update</button>
-                                                    </div>
-                                                </div>
+                                        <div class="live-preview">
+                                            <div class="table-responsive">
+                                                <table id="scroll-vertical"
+                                                    class="table table-bordered dt-responsive nowrap align-middle mdl-data-table"
+                                                    style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">S.No</th>
+                                                            <th scope="col">Name</th>
+                                                            <th scope="col">Email</th>
+                                                            <th scope="col">Contact Number</th>
+                                                            <th scope="col">Password</th>
+                                                            <th scope="col">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>John Doe</td>
+                                                            <td>johndoe@example.com</td>
+                                                            <td>+1234567890</td>
+                                                            <td>password123</td>
+                                                            <td><button type="button"
+                                                                class="btn btn-primary">Delete</button>
+                                                       </button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Jane Smith</td>
+                                                            <td>janesmith@example.com</td>
+                                                            <td>+1987654321</td>
+                                                            <td>password456</td>
+                                                            <td><button type="button"
+                                                                class="btn btn-primary">Delete</button>
+                                                       </button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Michael Brown</td>
+                                                            <td>michaelbrown@example.com</td>
+                                                            <td>+1122334455</td>
+                                                            <td>password789</td>
+                                                            <td><button type="button"
+                                                                class="btn btn-primary">Delete</button>
+                                                       </button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>Emily Davis</td>
+                                                            <td>emilydavis@example.com</td>
+                                                            <td>+2233445566</td>
+                                                            <td>password101</td>
+                                                            <td><button type="button"
+                                                                class="btn btn-primary">Delete</button>
+                                                       </button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>David Wilson</td>
+                                                            <td>davidwilson@example.com</td>
+                                                            <td>+3344556677</td>
+                                                            <td>password202</td>
+                                                            <td><button type="button"
+                                                                class="btn btn-primary">Delete</button>
+                                                       </button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>Linda Johnson</td>
+                                                            <td>lindajohnson@example.com</td>
+                                                            <td>+4455667788</td>
+                                                            <td>password303</td>
+                                                            <td><button type="button"
+                                                                class="btn btn-primary">Delete</button>
+                                                       </button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>Chris Lee</td>
+                                                            <td>chrislee@example.com</td>
+                                                            <td>+5566778899</td>
+                                                            <td>password404</td>
+                                                            <td><button type="button"
+                                                                class="btn btn-primary">Delete</button>
+                                                       </button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>Patricia Martinez</td>
+                                                            <td>patriciamartinez@example.com</td>
+                                                            <td>+6677889900</td>
+                                                            <td>password505</td>
+                                                            <td><button type="button"
+                                                                class="btn btn-primary">Delete</button>
+                                                       </button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>Robert Garcia</td>
+                                                            <td>robertgarcia@example.com</td>
+                                                            <td>+7788990011</td>
+                                                            <td>password606</td>
+                                                            <td><button type="button"
+                                                                class="btn btn-primary">Delete</button>
+                                                       </button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>Lisa Clark</td>
+                                                            <td>lisaclark@example.com</td>
+                                                            <td>+8899001122</td>
+                                                            <td>password707</td>
+                                                            <td><button type="button"
+                                                                class="btn btn-primary">Delete</button>
+                                                       </button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-                                        </form>
-                                        <script>
-                                            document.getElementById('hotelForm').addEventListener('submit', function(event) {
-                                                event.preventDefault();
-                                                // Assuming form submission is successful
-                                                window.location.href = 'index-uploadqrcode.html';
-                                            });
-                                        </script>
+                                        </div>
                                     </div>
+                                    
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- end page title -->
+
+
+
         </div>
         <!-- container-fluid -->
     </div>
@@ -267,7 +384,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="text-sm-end d-none d-sm-block">
-                      Design & Develop by Techizecode
+                        Design & Develop by Techizecode
                     </div>
                 </div>
             </div>

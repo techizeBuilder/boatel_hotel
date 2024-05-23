@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard :: Boatel - Hotel</title>
+    <title>Dashboard :: Boatel - Rental </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -154,16 +154,16 @@
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button"
                                 aria-expanded="false" aria-controls="sidebarApps">
-                                <i class="ri-apps-2-line"></i> <span data-key="t-apps">Hotel</span>
+                                <i class="ri-apps-2-line"></i> <span data-key="t-apps">Rental </span>
                             </a>
                             <div class="collapse menu-dropdown" id="sidebarApps">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link" data-key="t-calendar"> Hotel
+                                        <a href="index.html" class="nav-link" data-key="t-calendar"> Rental 
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index-location.html" class="nav-link" data-key="t-chat"> Location </a>
+                                        <a href="index-aminities.html" class="nav-link" data-key="t-chat"> Aminities </a>
                                     </li>
 
                                     <li class="nav-item">
@@ -171,13 +171,17 @@
                                             Booking </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index-proof.html" class="nav-link" data-key="t-mailbox">
-                                            Id Proof </a>
+                                        <a href="index-news_letter.html" class="nav-link" data-key="t-mailbox">
+                                            News Letter </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="index-uploadqrcode.html" class="nav-link" data-key="t-mailbox">
-                                            Qr Code </a>
+                                        <a href="index-user_reg.html" class="nav-link" data-key="t-mailbox">
+                                           Users</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-reg_owner.html" class="nav-link" data-key="t-mailbox">
+                                           Rental Owner</a>
                                     </li>
                             </div>
                         </li>
@@ -212,13 +216,13 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Hotel</h4>
+                                    <h4 class="mb-sm-0">Rental </h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a>
                                             </li>
-                                            <li class="breadcrumb-item active">Hotel</li>
+                                            <li class="breadcrumb-item active">Rental </li>
                                         </ol>
                                     </div>
 
@@ -228,7 +232,7 @@
                         <!-- end page title -->
                         <div class="row">
                             <div class="col-md-12 text-right" style="padding-bottom: 20px;">
-                                <a href="create.html" class="btn btn-primary">+ Add New Hotel</a>
+                                <a href="create.html" class="btn btn-primary">+ Add New Rental </a>
                             </div>
                             <div class="col-xl-12">
                                 <div class="card">
@@ -237,7 +241,9 @@
                                     <div class="card-body">
                                         <div class="live-preview">
                                             <div class="table-responsive">
-                                                <table class="table align-middle">
+                                                <table id="scroll-vertical"
+                                                    class="table table-bordered dt-responsive nowrap align-middle mdl-data-table"
+                                                    style="width:100%">
                                                     <thead>
                                                         <tr>
                                                             <th scope="col">S.No</th>
@@ -258,6 +264,8 @@
                                                             <td>Wi-Fi, Parking, Pool</td>
                                                             <td><button type="button"
                                                                     class="btn btn-primary">Edit</button>
+                                                            <button type="button"
+                                                                    class="btn btn-primary">Delete</button>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -269,6 +277,8 @@
                                                             <td>Breakfast, Gym, Spa</td>
                                                             <td><button type="button"
                                                                     class="btn btn-primary">Edit</button>
+                                                                    <button type="button"
+                                                                    class="btn btn-primary">Delete</button>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -280,6 +290,8 @@
                                                             <td>Pet-Friendly, Restaurant, Bar</td>
                                                             <td><button type="button"
                                                                     class="btn btn-primary">Edit</button>
+                                                                    <button type="button"
+                                                                    class="btn btn-primary">Delete</button>
                                                             </td>
                                                         </tr>
                                                     </tbody>
