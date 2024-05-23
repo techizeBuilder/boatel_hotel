@@ -139,7 +139,6 @@
                     <i class="ri-record-circle-line"></i>
                 </button>
             </div>
-
             <div id="scrollbar">
                 <div class="container-fluid">
 
@@ -154,16 +153,16 @@
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button"
                                 aria-expanded="false" aria-controls="sidebarApps">
-                                <i class="ri-apps-2-line"></i> <span data-key="t-apps">Hotel</span>
+                                <i class="ri-apps-2-line"></i> <span data-key="t-apps">Rental </span>
                             </a>
                             <div class="collapse menu-dropdown" id="sidebarApps">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link" data-key="t-calendar"> Hotel
+                                        <a href="index.html" class="nav-link" data-key="t-calendar"> Rental 
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index-location.html" class="nav-link" data-key="t-chat"> Location </a>
+                                        <a href="index-aminities.html" class="nav-link" data-key="t-chat"> Aminities </a>
                                     </li>
 
                                     <li class="nav-item">
@@ -171,13 +170,17 @@
                                             Booking </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index-proof.html" class="nav-link" data-key="t-mailbox">
-                                            Id Proof </a>
+                                        <a href="index-news_letter.html" class="nav-link" data-key="t-mailbox">
+                                            News Letter </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="index-uploadqrcode.html" class="nav-link" data-key="t-mailbox">
-                                            Qr Code </a>
+                                        <a href="index-user_reg.html" class="nav-link" data-key="t-mailbox">
+                                           Users</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-reg_owner.html" class="nav-link" data-key="t-mailbox">
+                                           Rental Owner</a>
                                     </li>
                             </div>
                         </li>
@@ -188,6 +191,7 @@
                 </div>
 
             </div>
+
             <div class="sidebar-background"></div>
         </div>
         <!-- Left Sidebar End -->
@@ -211,13 +215,13 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Id Proof</h4>
+                                    <h4 class="mb-sm-0">Aminities</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a>
                                             </li>
-                                            <li class="breadcrumb-item active">Id Proof</li>
+                                            <li class="breadcrumb-item active">Aminities</li>
                                         </ol>
                                     </div>
 
@@ -226,81 +230,123 @@
                         </div>
                         <!-- end page title -->
                         <div class="row">
-                            <!-- <div class="col-md-12 text-right" style="padding-bottom: 20px;">
-                                <a href="create-location.html" class="btn btn-primary">+ Add New Location</a>
-                            </div> -->
+                            <div class="col-md-12 text-right" style="padding-bottom: 20px;">
+                                <a href="create-aminities.html" class="btn btn-primary">+ Add New Aminities</a>
+                            </div>
                             <div class="col-xl-12">
                                 <div class="card">
-
-
                                     <div class="card-body">
                                         <div class="live-preview">
                                             <div class="table-responsive">
-                                                <table class="table align-middle">
+                                                <table id="scroll-vertical"
+                                                    class="table table-bordered dt-responsive nowrap align-middle mdl-data-table"
+                                                    style="width:100%">
                                                     <thead>
                                                         <tr>
                                                             <th scope="col">S.No</th>
-                                                            <th scope="col">Id Proof</th>
+                                                            <th scope="col">Amenity Image</th>
+                                                            <th scope="col">Amenity Name</th>
+                                                            <th scope="col">Action</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <!-- Rows with random ID proof images will be inserted here -->
                                                         <tr>
                                                             <td>1</td>
-                                                            <td><img src="https://example.com/id_proof1.jpg"
-                                                                    alt="ID Proof 1" style="max-width: 100px;"></td>
+                                                            <td><img src="path/to/swimming_pool.jpg" alt="Swimming Pool" style="width: 50px; height: 50px;"></td>
+                                                            <td>Swimming Pool</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                                                <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>2</td>
-                                                            <td><img src="https://example.com/id_proof2.jpg"
-                                                                    alt="ID Proof 2" style="max-width: 100px;"></td>
+                                                            <td><img src="path/to/gym.jpg" alt="Gym" style="width: 50px; height: 50px;"></td>
+                                                            <td>Gym</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                                                <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>3</td>
-                                                            <td><img src="https://example.com/id_proof3.jpg"
-                                                                    alt="ID Proof 3" style="max-width: 100px;"></td>
+                                                            <td><img src="path/to/parking.jpg" alt="Parking" style="width: 50px; height: 50px;"></td>
+                                                            <td>Parking</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                                                <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>4</td>
-                                                            <td><img src="https://example.com/id_proof4.jpg"
-                                                                    alt="ID Proof 4" style="max-width: 100px;"></td>
+                                                            <td><img src="path/to/playground.jpg" alt="Playground" style="width: 50px; height: 50px;"></td>
+                                                            <td>Playground</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                                                <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>5</td>
-                                                            <td><img src="https://example.com/id_proof5.jpg"
-                                                                    alt="ID Proof 5" style="max-width: 100px;"></td>
+                                                            <td><img src="path/to/library.jpg" alt="Library" style="width: 50px; height: 50px;"></td>
+                                                            <td>Library</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                                                <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>6</td>
-                                                            <td><img src="https://example.com/id_proof6.jpg"
-                                                                    alt="ID Proof 6" style="max-width: 100px;"></td>
+                                                            <td><img src="path/to/conference_room.jpg" alt="Conference Room" style="width: 50px; height: 50px;"></td>
+                                                            <td>Conference Room</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                                                <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>7</td>
-                                                            <td><img src="https://example.com/id_proof7.jpg"
-                                                                    alt="ID Proof 7" style="max-width: 100px;"></td>
+                                                            <td><img src="path/to/wifi.jpg" alt="Wi-Fi" style="width: 50px; height: 50px;"></td>
+                                                            <td>Wi-Fi</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                                                <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>8</td>
-                                                            <td><img src="https://example.com/id_proof8.jpg"
-                                                                    alt="ID Proof 8" style="max-width: 100px;"></td>
+                                                            <td><img src="path/to/security.jpg" alt="Security" style="width: 50px; height: 50px;"></td>
+                                                            <td>Security</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                                                <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>9</td>
-                                                            <td><img src="https://example.com/id_proof9.jpg"
-                                                                    alt="ID Proof 9" style="max-width: 100px;"></td>
+                                                            <td><img src="path/to/garden.jpg" alt="Garden" style="width: 50px; height: 50px;"></td>
+                                                            <td>Garden</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                                                <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>10</td>
-                                                            <td><img src="https://example.com/id_proof10.jpg"
-                                                                    alt="ID Proof 10" style="max-width: 100px;"></td>
+                                                            <td><img src="path/to/bbq_area.jpg" alt="BBQ Area" style="width: 50px; height: 50px;"></td>
+                                                            <td>BBQ Area</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                                                <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
                                     </div>
-
+                                    
+                                    
                                 </div>
                             </div>
                         </div>

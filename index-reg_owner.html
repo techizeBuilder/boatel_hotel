@@ -22,6 +22,12 @@
     <script src="assets/js/layout.js"></script>
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" />
+    <!--datatable responsive css-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
@@ -153,16 +159,16 @@
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button"
                                 aria-expanded="false" aria-controls="sidebarApps">
-                                <i class="ri-apps-2-line"></i> <span data-key="t-apps">Hotel</span>
+                                <i class="ri-apps-2-line"></i> <span data-key="t-apps">Rental </span>
                             </a>
                             <div class="collapse menu-dropdown" id="sidebarApps">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link" data-key="t-calendar"> Hotel
+                                        <a href="index.html" class="nav-link" data-key="t-calendar"> Rental 
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index-location.html" class="nav-link" data-key="t-chat"> Location </a>
+                                        <a href="index-aminities.html" class="nav-link" data-key="t-chat"> Aminities </a>
                                     </li>
 
                                     <li class="nav-item">
@@ -170,13 +176,17 @@
                                             Booking </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index-proof.html" class="nav-link" data-key="t-mailbox">
-                                            Id Proof </a>
+                                        <a href="index-news_letter.html" class="nav-link" data-key="t-mailbox">
+                                            News Letter </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="index-uploadqrcode.html" class="nav-link" data-key="t-mailbox">
-                                            Qr Code </a>
+                                        <a href="index-user_reg.html" class="nav-link" data-key="t-mailbox">
+                                           Users</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-reg_owner.html" class="nav-link" data-key="t-mailbox">
+                                           Rental Owner</a>
                                     </li>
                             </div>
                         </li>
@@ -187,133 +197,169 @@
                 </div>
 
             </div>
-
-            <div class="sidebar-background"></div>
+            <!-- Sidebar -->
         </div>
-        <!-- Left Sidebar End -->
-        <!-- Vertical Overlay-->
-        <div class="vertical-overlay"></div>
 
-        <!-- ============================================================== -->
-        <!-- Start right Content here -->
-        <!-- ============================================================== -->
-        <div class="main-content">
+        <div class="sidebar-background"></div>
+    </div>
+    <!-- Left Sidebar End -->
+    <!-- Vertical Overlay-->
+    <div class="vertical-overlay"></div>
 
-            <!-- <div class="page-content">
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <!-- <div class="page-content">
                 <div class="container-fluid"> -->
 
-            <!-- start page title -->
-            <div class="row">
-                <div class="page-content">
-                    <div class="container-fluid">
+        <!-- start page title -->
+        <div class="row">
+            <div class="page-content">
+                <div class="container-fluid">
 
-                        <!-- start page title -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Location</h4>
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Reg Owner</h4>
 
-                                    <div class="page-title-right">
-                                        <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a>
-                                            </li>
-                                            <li class="breadcrumb-item active">Location</li>
-                                        </ol>
-                                    </div>
-
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a>
+                                        </li>
+                                        <li class="breadcrumb-item active">Reg Owner</li>
+                                    </ol>
                                 </div>
+
                             </div>
                         </div>
-                        <!-- end page title -->
-                        <div class="row">
-                            <div class="col-md-12 text-right" style="padding-bottom: 20px;">
-                                <a href="create-location.html" class="btn btn-primary">+ Add New Location</a>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="card">
+                    </div>
+                    <!-- end page title -->
+                    <div class="row">
+                        <!-- <div class="col-md-12 text-right" style="padding-bottom: 20px;">
+                            <a href="create-qrcode.html" class="btn btn-primary">+ Add New Qrcode</a>
+                        </div> -->
+                        <div class="col-xl-12">
+                            <div class="card">
 
 
-                                    <div class="card-body">
-                                        <div class="live-preview">
-                                            <div class="table-responsive">
-                                                <table class="table align-middle" >
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">S.No</th>
-                                                            <th scope="col">City Name</th>
-                                                            <th scope="col">Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Mumbai</td>
-                                                            <td><button type="button" class="btn btn-primary">Edit</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>Delhi</td>
-                                                            <td><button type="button" class="btn btn-primary">Edit</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>Bangalore</td>
-                                                            <td><button type="button" class="btn btn-primary">Edit</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>4</td>
-                                                            <td>Hyderabad</td>
-                                                            <td><button type="button" class="btn btn-primary">Edit</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>5</td>
-                                                            <td>Chennai</td>
-                                                            <td><button type="button" class="btn btn-primary">Edit</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>6</td>
-                                                            <td>Kolkata</td>
-                                                            <td><button type="button" class="btn btn-primary">Edit</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>7</td>
-                                                            <td>Pune</td>
-                                                            <td><button type="button" class="btn btn-primary">Edit</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>8</td>
-                                                            <td>Ahmedabad</td>
-                                                            <td><button type="button" class="btn btn-primary">Edit</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>9</td>
-                                                            <td>Jaipur</td>
-                                                            <td><button type="button" class="btn btn-primary">Edit</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>10</td>
-                                                            <td>Surat</td>
-                                                            <td><button type="button" class="btn btn-primary">Edit</button></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                <div class="card-body">
+                                    <div class="live-preview">
+                                        <div class="table-responsive">
+                                            <table id="scroll-vertical"
+                                                class="table table-bordered dt-responsive nowrap align-middle mdl-data-table"
+                                                style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">S.No</th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Rental Name</th>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">Phone</th>
+                                                        <th scope="col">Address</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>John Doe</td>
+                                                        <td>Beach House</td>
+                                                        <td>johndoe@example.com</td>
+                                                        <td>(123) 456-7890</td>
+                                                        <td>123 Main St, City</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Jane Smith</td>
+                                                        <td>Mountain Cabin</td>
+                                                        <td>janesmith@example.com</td>
+                                                        <td>(234) 567-8901</td>
+                                                        <td>456 Oak Ave, Town</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Michael Brown</td>
+                                                        <td>Lake Cottage</td>
+                                                        <td>michaelbrown@example.com</td>
+                                                        <td>(345) 678-9012</td>
+                                                        <td>789 Elm St, Village</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Emily Davis</td>
+                                                        <td>Forest Cabin</td>
+                                                        <td>emilydavis@example.com</td>
+                                                        <td>(456) 789-0123</td>
+                                                        <td>101 Pine St, Forest</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>David Wilson</td>
+                                                        <td>Mountain Chalet</td>
+                                                        <td>davidwilson@example.com</td>
+                                                        <td>(567) 890-1234</td>
+                                                        <td>321 Hill St, Valley</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>Linda Johnson</td>
+                                                        <td>Beachfront Villa</td>
+                                                        <td>lindajohnson@example.com</td>
+                                                        <td>(678) 901-2345</td>
+                                                        <td>555 Ocean Ave, Beach</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>Chris Lee</td>
+                                                        <td>City Apartment</td>
+                                                        <td>chrislee@example.com</td>
+                                                        <td>(789) 012-3456</td>
+                                                        <td>789 Broadway, City</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>Patricia Martinez</td>
+                                                        <td>Luxury Condo</td>
+                                                        <td>patriciamartinez@example.com</td>
+                                                        <td>(890) 123-4567</td>
+                                                        <td>123 Park Ave, Downtown</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9</td>
+                                                        <td>Robert Garcia</td>
+                                                        <td>Country Farmhouse</td>
+                                                        <td>robertgarcia@example.com</td>
+                                                        <td>(901) 234-5678</td>
+                                                        <td>777 Farm Rd, Countryside</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>Lisa Clark</td>
+                                                        <td>Urban Loft</td>
+                                                        <td>lisaclark@example.com</td>
+                                                        <td>(012) 345-6789</td>
+                                                        <td>456 Loft St, Downtown</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
-                                    
-                                    
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- end page title -->
-
-
-
         </div>
-        <!-- container-fluid -->
+        <!-- end page title -->
+
+
+
+    </div>
+    <!-- container-fluid -->
     </div>
     <!-- End Page-content -->
 
@@ -1071,8 +1117,13 @@
     <script src="assets/libs/feather-icons/feather.min.js"></script>
     <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
     <script src="assets/js/plugins.js"></script>
-
-    <!-- apexcharts -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+    <!-- apexcharts -->     
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
     <!-- Vector map-->
